@@ -4,7 +4,6 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>Welcome to Kosa Consult</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Slider Example</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
@@ -81,31 +80,30 @@
       <div class="content">
         <h1><br>
         </h1>
-          <h1>WELCOME TO KOSA CONSULT </h1>
-          <p>I specialize in guiding companies through the intricacies of
-            digital transformation and uncovering the vast array of
-            possibilities it offers. This involves not only formulating a
-            comprehensive corporate digital strategy but also delving into the
-            specifics of process optimization and the development of innovative
-            products and services. With a wealth of experience spanning over 25
-            years in the IT sector, encompassing pivotal roles in software and
-            hardware product development, company establishment, and extensive
-            process optimization endeavors, I am well-equipped to seamlessly
-            steer digitalization projects from inception to fruition, catering
-            to startups as well as large enterprises. </p>
-          <img src="BK7A4328_korr_sRGB_8_1000x1500px_sw.jpeg" alt="" style="display: block; margin: auto;"
-            width="500"
-            height="750">
-          <p> Recognizing the unique nature of each business, I adopt a
-            personalized approach to every project I undertake. I meticulously
-            analyze and refine existing business processes, and where necessary,
-            I create tailored digital solutions, be it through software
-            customization or even bespoke development. Leveraging my expertise
-            in hardware development, IoT, and ID automation technology, I
-            integrate physical processes seamlessly into the digital realm,
-            ensuring a harmonious fusion between the tangible and the digital
-            worlds. </p>
-        </div>
+        <h1>WELCOME TO KOSA CONSULT </h1>
+        <p>I specialize in guiding companies through the intricacies of digital
+          transformation and uncovering the vast array of possibilities it
+          offers. This involves not only formulating a comprehensive corporate
+          digital strategy but also delving into the specifics of process
+          optimization and the development of innovative products and services.
+          With a wealth of experience spanning over 25 years in the IT sector,
+          encompassing pivotal roles in software and hardware product
+          development, company establishment, and extensive process optimization
+          endeavors, I am well-equipped to seamlessly steer digitalization
+          projects from inception to fruition, catering to startups as well as
+          large enterprises. </p>
+        <img src="BK7A4328_korr_sRGB_8_1000x1500px_sw.jpeg" alt="" style="display: block; margin: auto;"
+          width="500"
+          height="750">
+        <p> Recognizing the unique nature of each business, I adopt a
+          personalized approach to every project I undertake. I meticulously
+          analyze and refine existing business processes, and where necessary, I
+          create tailored digital solutions, be it through software
+          customization or even bespoke development. Leveraging my expertise in
+          hardware development, IoT, and ID automation technology, I integrate
+          physical processes seamlessly into the digital realm, ensuring a
+          harmonious fusion between the tangible and the digital worlds. </p>
+      </div>
     </section>
     <!-- Services szekció -->
     <section id="services">
@@ -169,6 +167,13 @@
   }
 
   setInterval(nextSlide, 3000); // Automatikus átváltás 3 másodpercenként
+        function nextSlide() {
+  console.log("currentSlide:", currentSlide); // Kiírjuk az aktuális slide indexet a konzolra
+  slides[currentSlide].style.opacity = 0;
+  currentSlide = (currentSlide + 1) % slides.length;
+  slides[currentSlide].style.opacity = 1;
+}
+
 	</script> </section>
   </body>
 </html>

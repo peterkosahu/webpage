@@ -57,7 +57,10 @@
             margin-left: auto; /* Bal margó automatikus beállítása */
             margin-right: 20px; /* Jobb margó */
         }
-
+.splide__slide img {
+  width: 100%;
+  height: auto;
+}
         /* Welcome szekció marginja */
         #welcome {
             margin-top: 20px; /* A Welcome szekció marginja */
@@ -156,24 +159,45 @@
           <div class="slide slide5"></div>
         </div>
       </div>
+      
+      </section>
+    <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+  <div class="splide__track">
+		<ul class="splide__list">
+			<li class="splide__slide">
+				<img src="reference1.png" alt="">
+			</li>
+			<li class="splide__slide">
+				<img src="reference2.png" alt="">
+			</li>
+			<li class="splide__slide">
+				<img src="reference3.png" alt="">
+			</li>
+		</ul>
+  </div>
       <script>
-  let slides = document.querySelectorAll('.slide');
-  let currentSlide = 0;
+ / let slides = document.querySelectorAll('.slide');
+ / let currentSlide = 0;
+/
+ / function nextSlide() {
+  /  slides[currentSlide].style.opacity = 0;
+   / currentSlide = (currentSlide + 1) % slides.length;
+   / slides[currentSlide].style.opacity = 1;
+/  }
 
-  function nextSlide() {
-    slides[currentSlide].style.opacity = 0;
-    currentSlide = (currentSlide + 1) % slides.length;
-    slides[currentSlide].style.opacity = 1;
-  }
-
-  setInterval(nextSlide, 3000); // Automatikus átváltás 3 másodpercenként
-        function nextSlide() {
-  console.log("currentSlide:", currentSlide); // Kiírjuk az aktuális slide indexet a konzolra
-  slides[currentSlide].style.opacity = 0;
-  currentSlide = (currentSlide + 1) % slides.length;
-  slides[currentSlide].style.opacity = 1;
-}
-
-	</script> </section>
+ / setInterval(nextSlide, 3000); // Automatikus átváltás 3 másodpercenként
+  /      function nextSlide() {
+/  console.log("currentSlide:", currentSlide); // Kiírjuk az aktuális slide indexet a konzolra
+/  slides[currentSlide].style.opacity = 0;
+/  currentSlide = (currentSlide + 1) % slides.length;
+ / slides[currentSlide].style.opacity = 1;
+/}
+  document.addEventListener( 'DOMContentLoaded', function () {
+    new Splide( '#image-carousel' ).mount();
+  } );
+</script>
+</section>
+    
+    
   </body>
 </html>
