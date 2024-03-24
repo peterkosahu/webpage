@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html>
-  <head>
- !DOCTYPE html>
-<html>
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <title>Welcome to Kosa Consult</title>
@@ -67,19 +64,22 @@
 
     /* Slider wrapper stílus */
     #sliderWrapper {
-      width: 800px; /* Fix slider szélesség */
-      height: 400px; /* Fix slider magasság */
+      width: 80%; /* Fix slider szélesség */
+      max-width: 800px; /* Maximális szélesség */
+      height: calc(80vw * 9 / 16); /* Szélesség 16:9 arányú magassággal */
+      max-height: 600px; /* Maximális magasság */
       overflow: hidden; /* Túlcsorduló tartalom elrejtése */
+      margin: 20px auto; /* Középre igazítás */
     }
 
     /* Slider képek stílus */
     #carouselExampleCaptions .carousel-inner .carousel-item img {
+      object-fit: contain; /* Tartalom méretének és arányának beállítása */
       width: 100%; /* Kép szélessége 100% */
-      height: auto; /* Automatikus magasság */
-      object-fit: cover; /* Arány megtartása és kitöltés */
+      height: 100%; /* Kép magassága 100% */
     }
   </style>
-  </head>
+</head>
   <body>
     <!-- Menü -->
     <div class="menu"> <a href="#welcome" class="active">Welcome</a> <a href="#services">Services</a><a
