@@ -1,303 +1,1 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>Welcome to Kosa Consult</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            background-color: black; /* Háttérszín fekete */
-            color: white; /* Szövegszín fehér */
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Betűtípus beállítása */
-            margin: 0; /* Margók eltávolítása */
-            padding: 0; /* Belépési szöveg eltávolítása */
-        }
-
-        /* Menü stílus */
-        .menu {
-            position: fixed; /* Fix pozíció az oldal tetején */
-            top: 0;
-            left: 0; /* Balra igazítás */
-            width: 100%;
-            background-color: rgba(0, 0, 0, 0.7); /* Fekete, 70%-os átlátszóság */
-            padding: 10px; /* Belső térköz beállítása */
-            display: flex; /* Flexbox elrendezés */
-            justify-content: flex-start; /* Elemek balra igazítása */
-            align-items: center; /* Elemek középre igazítása függőlegesen */
-            z-index: 1000; /* Az előtérben legyen a menü */
-        }
-
-        /* Menü linkek stílusa */
-        .menu a {
-            color: white; /* Menüszöveg színe */
-            text-decoration: none; /* Aláhúzás eltüntetése */
-            margin: 0 10px; /* Külső térköz beállítása */
-        }
-
-        /* Aktív menüpont stílusa */
-        .active {
-            font-weight: bold; /* Félkövér betűstílus */
-        }
-
-        /* Kép stílus */
-        img {
-            max-width: 100%; /* Kép maximális szélessége 100% */
-            height: auto; /* Automatikus magasság */
-            vertical-align: top; /* Felső igazítás */
-        }
-
-        /* Tartalom stílus */
-        .content {
-            padding: 10px;
-        }
-
-        /* Logo stílus */
-        .logo-container {
-            margin-left: auto; /* Bal margó automatikus beállítása */
-            margin-right: 20px; /* Jobb margó */
-        }
-
-        /* Welcome szekció marginja */
-        #welcome {
-            margin-top: 20px; /* A Welcome szekció marginja */
-        }
-        #services {
-				    margin-top: 20px; /* A Services szekció marginja */
-				}
-      * {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-    </style>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css"
-      rel="stylesheet">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
-  </head>
-  <body>
-    <!-- Menü -->
-    <div class="menu"> <a href="#welcome" class="active">Welcome</a> <a href="#services">Services</a>
-      <div class="logo-container"><img src="logo.jpg" alt="Logo" style="max-width: 50%;"></div>
-    </div>
-    <!-- Welcome szekció -->
-    <section id="welcome">
-      <div class="content">
-        <h1><br>
-        </h1>
-        <h1>WELCOME TO KOSA CONSULT </h1>
-        <p>I specialize in guiding companies through the intricacies of digital
-          transformation and uncovering the vast array of possibilities it
-          offers. This involves not only formulating a comprehensive corporate
-          digital strategy but also delving into the specifics of process
-          optimization and the development of innovative products and services.
-          With a wealth of experience spanning over 25 years in the IT sector,
-          encompassing pivotal roles in software and hardware product
-          development, company establishment, and extensive process optimization
-          endeavors, I am well-equipped to seamlessly steer digitalization
-          projects from inception to fruition, catering to startups as well as
-          large enterprises. </p>
-        <img src="BK7A4328_korr_sRGB_8_1000x1500px_sw.jpeg" alt="" style="display: block; margin: auto;"
-          width="500"
-          height="750">
-        <p> Recognizing the unique nature of each business, I adopt a
-          personalized approach to every project I undertake. I meticulously
-          analyze and refine existing business processes, and where necessary, I
-          create tailored digital solutions, be it through software
-          customization or even bespoke development. Leveraging my expertise in
-          hardware development, IoT, and ID automation technology, I integrate
-          physical processes seamlessly into the digital realm, ensuring a
-          harmonious fusion between the tangible and the digital worlds. </p>
-      </div>
-    </section>
-    <!-- Services szekció -->
-    <section id="services">
-      <div class="content">
-        <h2>Services</h2>
-        <p><strong>DIGITALIZATION STRATEGY / SPRINTS </strong></p>
-        <p>My consultancy specializes in developing business and digital
-          strategies, which includes understanding the current business
-          strategy, analyzing how to make it more effective using continuously
-          evolving digital technologies, and developing specific digital
-          strategies in short and long-term plans that focus on using digital
-          technologies to improve business processes. In addition to long-term
-          comprehensive digital strategic plans, I also provide digital
-          sprint-based consulting based on the Scrum philosophy. As part of
-          this, I focus on a specific area and formulate and implement quick,
-          immediate digital optimization results to support the achievement of
-          the goal.</p>
-        <p><br>
-        </p>
-        <p><strong>ANALYSIS AND DEVELOPMENT OF BUSINESS PROCESSES </strong></p>
-        <p>I have decades of consulting experience in optimizing business
-          processes, whether it be sales systems, CRM systems, logistics,
-          manufacturing processes, or communication and services with customers.
-          I review the processes and make recommendations based on the
-          formulated business strategies. During the necessary transformations,
-          we can propose process regulation transformations, but we can also
-          suggest the use of boxed applications, or the introduction of
-          customizable systems or even application development.</p>
-        <p><br>
-        </p>
-        <p><strong> INTEGRATE AND CONTROL&nbsp; PHYSICAL PROCESSES<br>
-          </strong></p>
-        <p>My past has extensive experience in making physical processes more
-          efficient using digital tools. Whether it's logistics processes, where
-          large amounts of goods move between locations, manufacturing
-          processes, where production tools constantly create new semi-finished
-          or finished products, or services, where multiple participants need to
-          work together, I continuously suggest the latest technological
-          solutions to make the processes transparent and provide the </p>
-      </div>
-    </section>
-        <section id="references">
-
-    <!-- Slideshow container -->
-<div class="slideshow-container">
-
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 3</div>
-    <img src="reference1.png" style="width:100%">
-    <div class="text">Caption Text</div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 3</div>
-    <img src="reference2.png" style="width:100%">
-    <div class="text">Caption Two</div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 3</div>
-    <img src="reference3.png" style="width:100%">
-    <div class="text">Caption Three</div>
-  </div>
-
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
-
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-</div>
-    </section>
-    
-      <script>
-        let slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-</script>
-  </body>
-</html>
+<!DOCTYPE html><html>  <head>    <meta http-equiv="content-type" content="text/html; charset=UTF-8">    <title>Welcome to Kosa Consult</title>    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <style>        body {            background-color: black; /* Háttérszín fekete */            color: white; /* Szövegszín fehér */            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Betűtípus beállítása */            margin: 0; /* Margók eltávolítása */            padding: 0; /* Belépési szöveg eltávolítása */        }        /* Menü stílus */        .menu {            position: fixed; /* Fix pozíció az oldal tetején */            top: 0;            left: 0; /* Balra igazítás */            width: 100%;            background-color: rgba(0, 0, 0, 0.7); /* Fekete, 70%-os átlátszóság */            padding: 10px; /* Belső térköz beállítása */            display: flex; /* Flexbox elrendezés */            justify-content: flex-start; /* Elemek balra igazítása */            align-items: center; /* Elemek középre igazítása függőlegesen */            z-index: 1000; /* Az előtérben legyen a menü */        }        /* Menü linkek stílusa */        .menu a {            color: white; /* Menüszöveg színe */            text-decoration: none; /* Aláhúzás eltüntetése */            margin: 0 10px; /* Külső térköz beállítása */        }        /* Aktív menüpont stílusa */        .active {            font-weight: bold; /* Félkövér betűstílus */        }        /* Kép stílus */        img {            max-width: 100%; /* Kép maximális szélessége 100% */            height: auto; /* Automatikus magasság */            vertical-align: top; /* Felső igazítás */        }        /* Tartalom stílus */        .content {            padding: 10px;        }        /* Welcome szekció marginja */        #welcome {            margin-top: 20px; /* A Welcome szekció marginja */        }        #services {				    margin-top: 20px; /* A Services szekció marginja */				}    </style>    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css"      rel="stylesheet">    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>  </head>  <body>    <!-- Menü -->    <div class="menu"> <a href="#welcome" class="active">Welcome</a> <a href="#services">Services</a><a        href="#references">References</a>      <div class="logo-container"><br>      </div>    </div>    <section id="logo">      <div class="content">        <h1 style="text-align: right;"> <img src="logo.jpg" alt="Logo" style="max-width: 10%; height: auto; margin-right: 10px;">        </h1>      </div>      <!-- Welcome szekció -->      <section id="welcome">        <div class="content">WELCOME TO KOSA CONSULT          <p>I specialize in guiding companies through the intricacies of            digital transformation and uncovering the vast array of            possibilities it offers. This involves not only formulating a            comprehensive corporate digital strategy but also delving into the            specifics of process optimization and the development of innovative            products and services. With a wealth of experience spanning over 25            years in the IT sector, encompassing pivotal roles in software and            hardware product development, company establishment, and extensive            process optimization endeavors, I am well-equipped to seamlessly            steer digitalization projects from inception to fruition, catering            to startups as well as large enterprises. </p>          <img src="BK7A4328_korr_sRGB_8_1000x1500px_sw.jpeg" alt="" style="display: block; margin: auto;"            width="500"            height="750">          <p> Recognizing the unique nature of each business, I adopt a            personalized approach to every project I undertake. I meticulously            analyze and refine existing business processes, and where necessary,            I create tailored digital solutions, be it through software            customization or even bespoke development. Leveraging my expertise            in hardware development, IoT, and ID automation technology, I            integrate physical processes seamlessly into the digital realm,            ensuring a harmonious fusion between the tangible and the digital            worlds. </p>        </div>      </section>      <!-- Services szekció -->      <section id="services">        <div class="content">          <h2>Services</h2>          <p><strong>DIGITALIZATION STRATEGY / SPRINTS </strong></p>          <p>My consultancy specializes in developing business and digital            strategies, which includes understanding the current business            strategy, analyzing how to make it more effective using continuously            evolving digital technologies, and developing specific digital            strategies in short and long-term plans that focus on using digital            technologies to improve business processes. In addition to long-term            comprehensive digital strategic plans, I also provide digital            sprint-based consulting based on the Scrum philosophy. As part of            this, I focus on a specific area and formulate and implement quick,            immediate digital optimization results to support the achievement of            the goal.</p>          <p><br>          </p>          <p><strong>ANALYSIS AND DEVELOPMENT OF BUSINESS PROCESSES </strong></p>          <p>I have decades of consulting experience in optimizing business            processes, whether it be sales systems, CRM systems, logistics,            manufacturing processes, or communication and services with            customers. I review the processes and make recommendations based on            the formulated business strategies. During the necessary            transformations, we can propose process regulation transformations,            but we can also suggest the use of boxed applications, or the            introduction of customizable systems or even application            development.</p>          <p><br>          </p>          <p><strong> INTEGRATE AND CONTROL&nbsp; PHYSICAL PROCESSES<br>            </strong></p>          <p>My past has extensive experience in making physical processes more            efficient using digital tools. Whether it's logistics processes,            where large amounts of goods move between locations, manufacturing            processes, where production tools constantly create new            semi-finished or finished products, or services, where multiple            participants need to work together, I continuously suggest the            latest technological solutions to make the processes transparent and            provide the </p>        </div>      </section>      <section id="references">        <div class="content">          <h2>Reference projects</h2>        </div>      </section>      <script>      </script> </section>  </body></html>
